@@ -1,8 +1,5 @@
-const nbMonths = (startPriceOld, startPriceNew, savingPerMonth, percentLossByMonth) => {
-  let priceOld = startPriceOld
-  let priceNew = startPriceNew
+const nbMonths = (priceOld, priceNew, savingPerMonth, percentLoss) => {
   let saving = 0
-  let percentLoss = percentLossByMonth
 
   for(let months=1; months < 99  ; months++) {
     if(months%2 === 0) {
